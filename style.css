@@ -1,0 +1,286 @@
+body {
+    font-family: "Montserrat" "Stolzl" ;
+    font-style: normal;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.navbar-container {
+    
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+}
+
+.nav-links a:hover {
+    color: gray;
+}
+
+.nav-button a {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.nav-button a:hover {
+    background-color: gray;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+
+  
+
+
+
+.section1{
+    
+    padding: 100px;
+    
+    padding-top: 100px;
+    width: 100%;
+    height: 400px; 
+    background-image: url(images/image-font.jpeg); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    
+    color: white; 
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    
+}
+
+
+.container1{
+    top: 0;
+    float: left;
+    height: 0px;
+    width: 500px;
+    text-align: left;
+}
+
+
+
+.section2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 10px;
+    background-color: #444;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+
+
+
+}
+
+.item{    
+    border-radius: 10px;
+    height: 50vh; 
+    width: 100%;
+    padding-top: 100%; 
+    position: relative;
+
+}
+
+
+
+.item img {
+    position: absolute;
+    
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.texte-sur-image {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    
+    background-color: transparent ; /* Fond semi-transparent pour le texte */
+    
+    border-radius: 5px;
+    text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+ 
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 1px solid #e1e1e1;
+      }
+
+      .nav-button{
+        display: none;
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .nav-links a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #e1e1e1;
+      }
+    
+      .menu-toggle {
+        display: block;
+      }
+
+      .section1{
+        width: 100%;
+      }
+    .container1{
+        width: 300px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footerget{
+        display: none;
+    }
+
+    /* règles CSS */
+}
+
+
+@media screen and (max-width: 992px) {
+     
+        
+    .section2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+  
+        
+    /* règles CSS */
+}
+
+
+
+
+.footer-container {
+    
+    overflow: hidden;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(41, 39, 39);
+    justify-content: space-around;
+}
+
+.footer1 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    text-align: left;
+    
+}
+
+.footer3 {
+    padding-top: 20px;
+    text-align: right;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+    color: aliceblue;
+
+
+
+}
+
+ .footer2 a {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(250, 244, 244);
+
+}
+
+.footer-social,
+.footer2{
+    font-size: 24px;
+
+
+}
+
+
+.fa-brands {
+    color: #e1e1e1;
+
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: rgb(241, 237, 237);
+    font-size: 16px;
+}
+
+.footer-nav a:hover {
+    color: gray;
+}
+
+
+
