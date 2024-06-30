@@ -138,7 +138,7 @@ body {
     left: 0;
     bottom: 0;
     
-    background-color: transparent ; /* Fond semi-transparent pour le texte */
+    background-color: transparent ; 
     
     border-radius: 5px;
     text-align: left;
@@ -147,29 +147,14 @@ body {
 @media screen and (max-width: 600px) {
  
 
-    .nav-links {
+    .nav-links,
+    .footer-nav,
+    .nav-button a {
         display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: white;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        border-top: 1px solid #e1e1e1;
+
       }
 
-      .nav-button{
-        display: none;
-      }
     
-      .nav-links.active {
-        display: flex;
-      }
-    
-      .nav-links a {
-        padding: 10px 20px;
-        border-bottom: 1px solid #e1e1e1;
-      }
     
       .menu-toggle {
         display: block;
@@ -177,19 +162,24 @@ body {
 
       .section1{
         width: 100%;
+        padding: 30px;
       }
     .container1{
         width: 300px;
+        float: left;
     }
+    
 
     .footer-container {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .footerget{
+    .footerget {
         display: none;
     }
+    
 
     /* règles CSS */
 }
